@@ -1,0 +1,20 @@
+﻿@model EuroTyp
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+</head>
+<body>
+    <form asp-action="Euro2ZSK" method="post">
+        <div>
+            <label asp-for="Betrag">Dein Betrag:</label>
+            <input asp-for="Betrag" />
+        </div>
+        <button type="submit">Berechne ZSK</button>
+    </form>
+</body>
+</html>
